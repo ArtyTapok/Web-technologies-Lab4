@@ -1,0 +1,108 @@
+@font-face {
+    font-family: SamsungOne;
+    src: url(SamsungOne-700.ttf);
+}
+
+html {
+    background-color: #101010;
+}
+
+* {
+    font-family: SamsungOne;
+}
+
+.result {
+    color: #338507;
+}
+
+#glove {
+    position: fixed;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%);
+    height: 80%;
+    transition: 1s;
+}
+
+.calc-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: black;
+    margin: 0 auto;
+    padding: 1rem;
+    width: 700px;
+    border-radius: 50px;
+}
+
+hr {
+    border: none;
+    background-color: #202020;
+    height: 4px;
+}
+
+.screen {
+    display: block;
+    height: 90px;
+    margin: 20px 0;
+    color: #fff;
+    text-align: right;
+    display: block;
+    font-size: 4rem;
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: space-around;
+    align-content: space-around;
+}
+
+.key {
+    font-size: 4rem;
+    width: 20%;
+    aspect-ratio: 1;
+    color: #fff;
+    flex-grow: 0;
+    background-color: #202020;
+    border-radius: 50%;
+    border-style: none;
+    transition: 0.3s;
+}
+
+.zero {
+    width: 315px;
+    height: 140px;
+    border-radius: 70px;
+}
+
+.key:hover {
+    background-color: #858585;
+}
+
+.result:hover {
+    background-color: #599d38;
+}
+
+.key:active {
+    font-size: 3rem;
+}
+
+.space {
+    visibility: hidden;
+}
+
+.operation,
+.bracket {
+    color: #3eb100;
+}
+
+.clear {
+    color: #d40a03;
+}
+
+.result {
+    background-color: #338507;
+}
